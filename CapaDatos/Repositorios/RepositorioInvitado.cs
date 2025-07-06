@@ -65,7 +65,8 @@ namespace CapaDatos.Repositorios
                 apellidoPaterno = fila["apellido_paterno"].ToString(),
                 apellidoMaterno = fila["apellido_materno"].ToString(),
                 fechaVigencia = Convert.ToDateTime(fila["fecha_vigencia"]),
-                estatus = Convert.ToBoolean(fila["estatus"]),
+                estatus = fila["estatus"].ToString(),
+                tipoInvitacion = fila["tipo_invitacion"].ToString(),
                 idUsuario = Convert.ToInt32(fila["id_usuario"])
             };
             return invitado;
@@ -88,7 +89,8 @@ namespace CapaDatos.Repositorios
                     apellidoPaterno = fila["apellido_paterno"].ToString(),
                     apellidoMaterno = fila["apellido_materno"].ToString(),
                     fechaVigencia = Convert.ToDateTime(fila["fecha_vigencia"]),
-                    estatus = Convert.ToBoolean(fila["estatus"]),
+                    estatus = fila["estatus"].ToString(),
+                    tipoInvitacion = fila["tipo_invitacion"].ToString(),
                     idUsuario = Convert.ToInt32(fila["id_usuario"])
                 };
                 listaInvitados.Add(invitado);

@@ -17,7 +17,8 @@ namespace CapaDominio
         private string apellidoMaterno;
         private DateTime fechaVigencia;
         private string nombreCompleto;
-        private bool estatus;
+        private string estatus;
+        private string tipoInvitacion;
         private int idUsuario;
 
         private InvitadoDominio invitadoDomino;
@@ -54,10 +55,15 @@ namespace CapaDominio
             get { return fechaVigencia; }
             set { fechaVigencia = value; }
         }
-        public bool Estatus
+        public string Estatus
         {
             get { return estatus; }
             set { estatus = value; }
+        }
+        public string TipoInvitacion
+        {
+            get { return tipoInvitacion; }
+            set { tipoInvitacion = value; }
         }
         public int IdUsuario
         {
@@ -93,6 +99,7 @@ namespace CapaDominio
                     ApellidoMaterno = invitadoDatos.apellidoMaterno,
                     FechaVigencia = invitadoDatos.fechaVigencia,
                     Estatus = invitadoDatos.estatus,
+                    TipoInvitacion = invitadoDatos.tipoInvitacion,
                     IdUsuario = invitadoDatos.idUsuario
                 };
                 listaInvitados.Add(invitadoDomino);
@@ -113,6 +120,7 @@ namespace CapaDominio
             invitadoDominio.ApellidoPaterno = invitadoDatos.apellidoPaterno;
             invitadoDominio.ApellidoMaterno = invitadoDatos.apellidoMaterno;
             invitadoDominio.FechaVigencia = invitadoDatos.fechaVigencia;
+            invitadoDominio.TipoInvitacion= invitadoDatos.tipoInvitacion;
             invitadoDominio.Estatus = invitadoDatos.estatus;
             invitadoDominio.IdUsuario = invitadoDatos.idUsuario;
             return invitadoDominio;

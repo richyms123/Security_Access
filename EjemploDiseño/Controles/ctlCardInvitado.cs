@@ -18,7 +18,7 @@ namespace EjemploDiseño.Controles
         }
         private int idInvitado;
         private int idResidente;
-        private bool estatus;
+        private string estatus;
         public int IdInvitado
         {
             get { return idInvitado; }
@@ -41,10 +41,10 @@ namespace EjemploDiseño.Controles
             get { return lblEstatus.Text; }
             set { lblEstatus.Text = value; }
         }
-        public bool EstatusInvitado
+        public string EstatusInvitado
         {
             get { return estatus; }
-            set { estatus = value; lblEstatus.Text = value ? "Activo" : "Inactivo"; }
+            set { estatus = value;  }
         }
 
         public string NombreResidente

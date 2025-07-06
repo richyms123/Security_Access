@@ -55,7 +55,7 @@
             this.lblTipoVisitante.CursorType = null;
             this.lblTipoVisitante.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTipoVisitante.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblTipoVisitante.Location = new System.Drawing.Point(136, 200);
+            this.lblTipoVisitante.Location = new System.Drawing.Point(133, 200);
             this.lblTipoVisitante.Name = "lblTipoVisitante";
             this.lblTipoVisitante.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblTipoVisitante.Size = new System.Drawing.Size(154, 20);
@@ -70,7 +70,7 @@
             this.lblCorreo.AutoEllipsis = false;
             this.lblCorreo.CursorType = null;
             this.lblCorreo.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorreo.Location = new System.Drawing.Point(95, 325);
+            this.lblCorreo.Location = new System.Drawing.Point(59, 324);
             this.lblCorreo.Name = "lblCorreo";
             this.lblCorreo.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblCorreo.Size = new System.Drawing.Size(86, 25);
@@ -85,7 +85,7 @@
             this.lblTelefono.AutoEllipsis = false;
             this.lblTelefono.CursorType = null;
             this.lblTelefono.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefono.Location = new System.Drawing.Point(95, 284);
+            this.lblTelefono.Location = new System.Drawing.Point(59, 283);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblTelefono.Size = new System.Drawing.Size(100, 25);
@@ -100,7 +100,7 @@
             this.lblDomicilio.AutoEllipsis = false;
             this.lblDomicilio.CursorType = null;
             this.lblDomicilio.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDomicilio.Location = new System.Drawing.Point(95, 241);
+            this.lblDomicilio.Location = new System.Drawing.Point(59, 240);
             this.lblDomicilio.Name = "lblDomicilio";
             this.lblDomicilio.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblDomicilio.Size = new System.Drawing.Size(173, 25);
@@ -147,7 +147,7 @@
             this.materialPictureBox5.IconChar = FontAwesome.Sharp.MaterialIcons.Phone;
             this.materialPictureBox5.IconColor = System.Drawing.SystemColors.ControlText;
             this.materialPictureBox5.IconSize = 35;
-            this.materialPictureBox5.Location = new System.Drawing.Point(54, 280);
+            this.materialPictureBox5.Location = new System.Drawing.Point(18, 279);
             this.materialPictureBox5.Name = "materialPictureBox5";
             this.materialPictureBox5.Size = new System.Drawing.Size(35, 35);
             this.materialPictureBox5.TabIndex = 26;
@@ -160,7 +160,7 @@
             this.materialPictureBox4.IconChar = FontAwesome.Sharp.MaterialIcons.Email;
             this.materialPictureBox4.IconColor = System.Drawing.SystemColors.ControlText;
             this.materialPictureBox4.IconSize = 35;
-            this.materialPictureBox4.Location = new System.Drawing.Point(54, 322);
+            this.materialPictureBox4.Location = new System.Drawing.Point(18, 321);
             this.materialPictureBox4.Name = "materialPictureBox4";
             this.materialPictureBox4.Size = new System.Drawing.Size(35, 35);
             this.materialPictureBox4.TabIndex = 25;
@@ -173,7 +173,7 @@
             this.materialPictureBox3.IconChar = FontAwesome.Sharp.MaterialIcons.HomeAccount;
             this.materialPictureBox3.IconColor = System.Drawing.SystemColors.ControlText;
             this.materialPictureBox3.IconSize = 35;
-            this.materialPictureBox3.Location = new System.Drawing.Point(54, 237);
+            this.materialPictureBox3.Location = new System.Drawing.Point(18, 236);
             this.materialPictureBox3.Name = "materialPictureBox3";
             this.materialPictureBox3.Size = new System.Drawing.Size(35, 35);
             this.materialPictureBox3.TabIndex = 24;

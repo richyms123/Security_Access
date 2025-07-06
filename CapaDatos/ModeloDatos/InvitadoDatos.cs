@@ -13,7 +13,8 @@ namespace CapaDatos.ModeloDatos
         public string apellidoPaterno { get; set; }
         public string apellidoMaterno { get; set; }
         public DateTime fechaVigencia { get; set; }
-        public bool estatus { get; set; }
+        public string estatus { get; set; }
+        public string tipoInvitacion { get; set; }
         public int idUsuario { get; set; }
     }
 }

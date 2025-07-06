@@ -34,6 +34,7 @@ namespace EjemploDiseño
         public frmInicio()
         {
             InitializeComponent();
+           ;
         }
 
         private void btnIniciarScanner_Click(object sender, EventArgs e)
@@ -227,12 +228,12 @@ namespace EjemploDiseño
             ctlCardInvitado cardInvitado = new ctlCardInvitado
             {
                 NombreCompleto = $"{invitado.Nombre} {invitado.ApellidoPaterno} {invitado.ApellidoMaterno}",
-                NombreResidente= $"{usuarioResidente.Nombre} {usuarioResidente.ApellidoPaterno} {usuarioResidente.ApellidoMaterno}",
+                NombreResidente = $"{usuarioResidente.Nombre} {usuarioResidente.ApellidoPaterno} {usuarioResidente.ApellidoMaterno}",
                 FechaVigencia = invitado.FechaVigencia.ToString("dd/MM/yyyy"),
-                EstatusInvitado = invitado.Estatus,
+                EstatusInvitado = invitado.Estatus == null ? "Activo" : invitado.Estatus,
                 IdInvitado = invitado.IdInvitado,
                 IdResidente = usuarioResidente.IdUsuario,
-                Estatus = invitado.Estatus ? "Activo" : "Inactivo",
+                Estatus = invitado.Estatus ,
                 Dock = DockStyle.Fill
             };
             pnlContenedor.Controls.Add(cardInvitado);

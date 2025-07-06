@@ -152,19 +152,19 @@
             this.panel.Controls.Add(this.pnlContenedor);
             this.panel.Controls.Add(this.btnRegistrarSalida);
             this.panel.Controls.Add(this.btnRegistrarEntrada);
-            this.panel.Location = new System.Drawing.Point(561, 21);
+            this.panel.Location = new System.Drawing.Point(589, 21);
             this.panel.Name = "panel";
             this.panel.ShowBorders = true;
-            this.panel.Size = new System.Drawing.Size(499, 492);
+            this.panel.Size = new System.Drawing.Size(471, 492);
             this.panel.TabIndex = 1;
             this.panel.Click += new System.EventHandler(this.bunifuPanel2_Click);
             // 
             // pnlContenedor
             // 
             this.pnlContenedor.BackColor = System.Drawing.Color.White;
-            this.pnlContenedor.Location = new System.Drawing.Point(18, 14);
+            this.pnlContenedor.Location = new System.Drawing.Point(24, 14);
             this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(466, 365);
+            this.pnlContenedor.Size = new System.Drawing.Size(425, 365);
             this.pnlContenedor.TabIndex = 43;
             // 
             // btnRegistrarSalida
@@ -178,7 +178,7 @@
             this.btnRegistrarSalida.IconColor = System.Drawing.Color.White;
             this.btnRegistrarSalida.IconSize = 38;
             this.btnRegistrarSalida.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistrarSalida.Location = new System.Drawing.Point(73, 439);
+            this.btnRegistrarSalida.Location = new System.Drawing.Point(52, 439);
             this.btnRegistrarSalida.Name = "btnRegistrarSalida";
             this.btnRegistrarSalida.Size = new System.Drawing.Size(379, 42);
             this.btnRegistrarSalida.TabIndex = 42;
@@ -197,7 +197,7 @@
             this.btnRegistrarEntrada.IconColor = System.Drawing.Color.White;
             this.btnRegistrarEntrada.IconSize = 38;
             this.btnRegistrarEntrada.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistrarEntrada.Location = new System.Drawing.Point(73, 385);
+            this.btnRegistrarEntrada.Location = new System.Drawing.Point(52, 385);
             this.btnRegistrarEntrada.Name = "btnRegistrarEntrada";
             this.btnRegistrarEntrada.Size = new System.Drawing.Size(379, 42);
             this.btnRegistrarEntrada.TabIndex = 41;
