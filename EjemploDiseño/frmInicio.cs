@@ -230,10 +230,10 @@ namespace EjemploDiseño
                 NombreCompleto = $"{invitado.Nombre} {invitado.ApellidoPaterno} {invitado.ApellidoMaterno}",
                 NombreResidente = $"{usuarioResidente.Nombre} {usuarioResidente.ApellidoPaterno} {usuarioResidente.ApellidoMaterno}",
                 FechaVigencia = invitado.FechaVigencia.ToString("dd/MM/yyyy"),
-                EstatusInvitado = invitado.Estatus == null ? "Activo" : invitado.Estatus,
+                Estatus ="Tipo invitación: "+ invitado.TipoInvitacion,
                 IdInvitado = invitado.IdInvitado,
                 IdResidente = usuarioResidente.IdUsuario,
-                Estatus = invitado.Estatus ,
+                EstatusInvitado = invitado.TipoInvitacion,
                 Dock = DockStyle.Fill
             };
             pnlContenedor.Controls.Add(cardInvitado);
