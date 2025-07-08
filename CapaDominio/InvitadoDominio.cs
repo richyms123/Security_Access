@@ -125,5 +125,10 @@ namespace CapaDominio
             invitadoDominio.IdUsuario = invitadoDatos.idUsuario;
             return invitadoDominio;
         }
+
+        public int EditarEstatusInvitado(int idInvitado, string estatus)
+        {
+            return iRepositorioInvitado.EditarEstatusInvitado(idInvitado, estatus);
+        }
     }
 }

@@ -181,6 +181,7 @@ namespace EjemploDiseño
                 {
                     if (invitadoActual.FechaVigencia < DateTime.Now)
                     {
+                        invitadoActual.EditarEstatusInvitado(idUsuario, "Vencido");
                         MessageBox.Show("El invitado ha expirado su vigencia.");
                         return;
                     }
@@ -214,7 +215,7 @@ namespace EjemploDiseño
                 NombreCompleto = $"{usuarioResidente.Nombre} {usuarioResidente.ApellidoPaterno} {usuarioResidente.ApellidoMaterno}",
                 Domicilio = $"{usuarioResidente.Calle} {usuarioResidente.NumeroCasa}",
                 Telefono = usuarioResidente.Telefono,
-                FotoUsuario = usuarioResidente.Imagen != null ? Image.FromStream(new MemoryStream(usuarioResidente.Imagen)) : Properties.Resources.userdefault,
+                FotoUsuario = usuarioResidente.Imagen != null ? Image.FromStream(new MemoryStream(usuarioResidente.Imagen)) : SecurityAccess.Properties.Resources.userdefault,
                 Correo = usuarioResidente.CorreoElectronico,
                Dock = DockStyle.Fill
             };
@@ -297,6 +298,7 @@ namespace EjemploDiseño
                 HistorialDominio historial = new HistorialDominio();
                 if (historial.VerificarEntradaAbiertaResidente(usuarioActual.IdUsuario)!=null)
                 {
+
                     MessageBox.Show("El residente ya tiene una entrada abierta.");
                     return;
                 }
@@ -320,10 +322,11 @@ namespace EjemploDiseño
                 HistorialDominio historial = new HistorialDominio();
                 if (historial.VerificarEntradaAbiertaInvitado(invitadoActual.IdInvitado) != null)
                 {
+                   
                     MessageBox.Show("El invitado ya tiene una entrada abierta.");
                     return;
                 }
-
+                invitadoActual.EditarEstatusInvitado(invitadoActual.IdInvitado, "Activo");
 
                 int resultado = historial.AgregarFechaEntradaInvitado(invitadoActual.IdInvitado,usuarioConInvitado.IdUsuario, DateTime.Now);
                 if (resultado > 0)

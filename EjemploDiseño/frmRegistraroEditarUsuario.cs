@@ -74,7 +74,7 @@ namespace EjemploDiseño
             else
             {
                 lblTipo.Text = "Registrar Usuario";
-                pictureUsuario.Image = Properties.Resources.userdefault;
+                pictureUsuario.Image = SecurityAccess.Properties.Resources.userdefault;
                 
             }
         }
@@ -206,6 +206,7 @@ namespace EjemploDiseño
                 var resultado = usuarioDominio.GuardarCambios();
                 if (resultado.Exito)
                 {
+                    
                     mensaje.Show(this, resultado.Mensaje,
                         Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 4000, "", Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopRight);
                     DialogResult = DialogResult.OK;

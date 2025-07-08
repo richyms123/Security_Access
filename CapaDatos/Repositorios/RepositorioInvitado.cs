@@ -15,12 +15,14 @@ namespace CapaDatos.Repositorios
         private readonly string queryObtenerTodos;
         private readonly string queryObtenerDatosInvitadoPorId;
         private readonly string queryEliminarInvitadoPorIdUsuario;
+        private readonly string queryEditarEstatusInvitado;
 
         public RepositorioInvitado()
         {
             queryObtenerTodos = "SELECT * FROM Invitados";
             queryObtenerDatosInvitadoPorId = "SELECT * FROM Invitados WHERE id_invitado=@id_invitado";
             queryEliminarInvitadoPorIdUsuario = "DELETE FROM Invitados WHERE id_usuario=@id_usuario";
+            queryEditarEstatusInvitado = "UPDATE Invitados SET estatus=@estatus WHERE id_invitado=@id_invitado";
         }
         public int Agregar(InvitadoDatos entidad)
         {
@@ -30,6 +32,16 @@ namespace CapaDatos.Repositorios
         public int Editar(InvitadoDatos entidad)
         {
             throw new NotImplementedException();
+        }
+
+        public int EditarEstatusInvitado(int idInvitado, string estatus)
+        {
+            parametrosSql = new List<SqlParameter>
+            {
+                new SqlParameter("@estatus",estatus),
+                new SqlParameter("@id_invitado",idInvitado)
+            };
+            return Convert.ToInt32(ExecuteScalar(queryEditarEstatusInvitado));
         }
 
         public int Eliminar(int id_usuario)

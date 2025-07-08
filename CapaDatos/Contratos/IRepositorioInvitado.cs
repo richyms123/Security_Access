@@ -12,6 +12,7 @@ namespace CapaDatos.Contratos
         InvitadoDatos ObtenerDatosInvitadoPorId(int idInvitado);
 
         int EliminarInvitadoPorIdUsuario(int idUsuario);
+        int EditarEstatusInvitado(int idInvitado,string estatus);
 
     }
 }
